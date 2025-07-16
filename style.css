@@ -1,0 +1,189 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #002B5B;
+    padding: 1em 0;
+    color: white;
+}
+
+.navbar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: bold;
+    padding-left: 10px;
+    color: #FFFFFF;
+    letter-spacing: 0.5px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #0056b3;
+    list-style: none;
+    padding: 0;
+    z-index: 999;
+}
+
+.nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li a {
+    display: block;
+    padding: 10px;
+}
+
+.hero {
+    background: linear-gradient(to right, #004080, #0099ff);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 1.5em;
+}
+
+.btn {
+    background-color: white;
+    color: #004080;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.why-choose {
+    background-color: #F4F1EC;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.why-choose h2 {
+    font-size: 2.2em;
+    margin-bottom: 60px;
+    color: #1A1A1A;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.feature {
+    max-width: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.feature p {
+    margin-top: 20px;
+    font-size: 1.05em;
+    color: #333;
+    font-weight: 600;
+    text-align: center;
+}
+
+.site-footer {
+    background-color: #002B5B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-left: 20px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .feature img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .btn {
+        font-size: 0.9em;
+        padding: 8px 16px;
+    }
+
+    .why-choose h2 {
+        font-size: 1.5em;
+    }
+}
